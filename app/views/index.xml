@@ -1,0 +1,42 @@
+<Alloy>
+	<TabGroup id="mainTabGroup"> 
+		<!-- On click event execute getTodoList -->
+        <Tab id="tab1" > 
+            <Window id="winOne" backgroundColor="white"> 
+                 <TableView id="tableViewFresa" height="80%" /> 
+
+	                 <Button id="pedirFresa" onClick="pedirUno" parametro="fresa">Pedir</Button>
+
+                 <View id="view11" backgroundColor="white">
+	                 <TextField id="fresaTextField" width="150px" left="20" hintText="Mandar a Producir" backgroundColor="white"></TextField>
+	                 <Button id="producirFresas" left="20" onClick="mandarProducir" fruta="fresa" usuario="roberto">Poducir</Button>
+	                 
+                 </View>
+            </Window> 
+        </Tab> 
+        <Tab id="tab2" > 
+            <Window id="winTwo" backgroundColor="white"> 
+                 <TableView id="tableViewPina" height="80%" />
+
+	                 <Button id="pedirFresa" right="1px"  onClick="pedirUno" parametro="pina">Pedir</Button>
+
+                 <View id="view21" backgroundColor="white" >
+	                 <TextField id="pinaTextField" width="150px" left="20" hintText="Mandar a Producir" backgroundColor="white" ></TextField>
+	                 <Button id="producirPinas" left="20" onClick="mandarProducir" fruta="pina" usuario="roberto">Poducir</Button>
+	                 
+                 </View> 
+            </Window> 
+        </Tab> 
+        <Tab id="tab3" > 
+            <Window id="winThre" backgroundColor="white"> 
+                 <TableView id="tableViewKiwi" height="80%" />
+                     <Button id="pedirFresa" onClick="pedirUno" parametro="kiwi">Pedir</Button>
+                 
+                 <View id="view31" backgroundColor="white">
+	                 <TextField id="kiwiTextField" width="150px" left="20" hintText="Mandar a Producir" backgroundColor="white"></TextField>
+	                 <Button id="producirKiwi" left="20" onClick="mandarProducir" fruta="kiwi" usuario="roberto">Poducir</Button>
+                 </View>
+            </Window> 
+        </Tab>
+    </TabGroup>
+</Alloy>

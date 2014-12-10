@@ -1,0 +1,74 @@
+"mainTabGroup":{ 
+       backgroundColor:"black", 
+}, 
+"#pedirFresa":{
+	layout:'vertical'
+}
+"#winOne":{     
+       layout:'vertical'
+}
+"#winTwo":{     
+       layout:'vertical'
+} 
+"#winThre":{     
+       layout:'vertical'
+} 
+"#view1":{
+	layout:'horizontal',
+	width:'auto',
+	height:'auto'
+}
+"#view11":{
+	layout:'horizontal',
+	width:'auto',
+	height:'auto'
+}
+"#view2":{
+	layout:'horizontal',
+	width:'auto',
+	height:'auto'
+}
+"#view21":{
+	layout:'horizontal',
+	width:'auto',
+	height:'auto'
+}
+"#view3":{
+	layout:'horizontal',
+	width:'auto',
+	height:'auto'
+}
+"#view31":{
+	layout:'horizontal',
+	width:'auto',
+	height:'auto'
+}
+"#tab1":{ 
+       title:"Fresas", 
+       icon:"fresa.png", 
+}, 
+"#tab2":{ 
+       title:"Piñas", 
+       icon:"pina.png", 
+}, 
+"#tab3":{
+	   title:"Kiwi", 
+       icon:"kiwi.png", 
+},
+"#tableView":{ 
+       headerTitle : 'To do list', 
+}, 
+"#inserTxtF":{ 
+       color:"#336699", 
+       top:"10dp", 
+       left:"10dp", 
+       width:"290dp", 
+       height:"50dp", 
+}, 
+"#insertBtn":{ 
+       title:"Insert", 
+       top:"10dp", 
+       left:"180dp", 
+       width:"124dp", 
+       height:"50dp", 
+},  
