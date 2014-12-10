@@ -101,9 +101,18 @@ function Controller() {
             console.log("LLEGAAAAAA ");
             console.log("El responseText fue: \n********************", this.responseText + "\n********************");
             if (0 == tamano) {
-                "fresa" == fruta && ($.tableViewFresa.headerTitle = "There are no fruits in our " + fruta + " stock");
-                "pina" == fruta && ($.tableViewPina.headerTitle = "There are no fruits in our " + fruta + " stock");
-                "kiwi" == fruta && ($.tableViewKiwi.headerTitle = "There are no fruits in our " + fruta + " stock");
+                if ("fresa" == fruta) {
+                    $.tableViewFresa.headerTitle = "There are no fruits in our " + fruta + " stock";
+                    $.tableViewFresa.setData([]);
+                }
+                if ("pina" == fruta) {
+                    $.tableViewPina.headerTitle = "There are no fruits in our " + fruta + " stock";
+                    $.tableViewPina.setData([]);
+                }
+                if ("kiwi" == fruta) {
+                    $.tableViewKiwi.headerTitle = "There are no fruits in our " + fruta + " stock";
+                    $.tableViewKiwi.setData([]);
+                }
             }
             dataArray = [];
             for (var i = 0; tamano > i; i++) if ("fresa" == fruta) {
