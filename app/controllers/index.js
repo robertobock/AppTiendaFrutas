@@ -221,7 +221,7 @@ function getTodoList(fruta) {
 					console.log("El ID es "+e.source.miID);
 					//Here you have to change it for your local ip
 					var params = {"_id":e.source.miID};
-					sendDelete.open('DELETE', 'http://'+ip+':3000/api/kiwitienda/despacharfruta');
+					sendDelete.open('PUT', 'http://'+ip+':3000/api/kiwitienda/despacharfruta');
 					sendDelete.send(params);
 					
 					sendDelete.onload = function(e){
@@ -310,7 +310,7 @@ function getTodoList(fruta) {
 					console.log("El ID es "+e.source.miID);
 					//Here you have to change it for your local ip
 					var params = {"_id":e.source.miID};
-					sendDelete.open('DELETE', 'http://'+ip+':3000/api/kiwitienda/despacharfruta');
+					sendDelete.open('PUT', 'http://'+ip+':3000/api/kiwitienda/despacharfruta');
 					sendDelete.send(params);
 					
 					sendDelete.onload = function(e){
@@ -399,7 +399,7 @@ function getTodoList(fruta) {
 					console.log("El ID es "+e.source.miId);
 					//Here you have to change it for your local ip
 					var params = {"_id":e.source.miID};
-					sendDelete.open('DELETE', 'http://'+ip+':3000/api/kiwitienda/despacharfruta');
+					sendDelete.open('PUT', 'http://'+ip+':3000/api/kiwitienda/despacharfruta');
 					sendDelete.send(params);
 					
 					sendDelete.onload = function(e){

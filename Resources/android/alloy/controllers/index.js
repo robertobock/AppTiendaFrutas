@@ -186,7 +186,7 @@ function Controller() {
                     var params = {
                         _id: e.source.miID
                     };
-                    sendDelete.open("DELETE", "http://" + ip + ":3000/api/kiwitienda/despacharfruta");
+                    sendDelete.open("PUT", "http://" + ip + ":3000/api/kiwitienda/despacharfruta");
                     sendDelete.send(params);
                     sendDelete.onload = function() {
                         getTodoList(fruta);
@@ -271,7 +271,7 @@ function Controller() {
                     var params = {
                         _id: e.source.miID
                     };
-                    sendDelete.open("DELETE", "http://" + ip + ":3000/api/kiwitienda/despacharfruta");
+                    sendDelete.open("PUT", "http://" + ip + ":3000/api/kiwitienda/despacharfruta");
                     sendDelete.send(params);
                     sendDelete.onload = function() {
                         getTodoList(fruta);
@@ -355,7 +355,7 @@ function Controller() {
                     var params = {
                         _id: e.source.miID
                     };
-                    sendDelete.open("DELETE", "http://" + ip + ":3000/api/kiwitienda/despacharfruta");
+                    sendDelete.open("PUT", "http://" + ip + ":3000/api/kiwitienda/despacharfruta");
                     sendDelete.send(params);
                     sendDelete.onload = function() {
                         getTodoList(fruta);
