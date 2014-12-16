@@ -122,7 +122,7 @@ function Controller() {
                     height: 80
                 });
                 var vender = Titanium.UI.createImageView({
-                    image: "vender.png",
+                    image: venderImg,
                     width: 64,
                     height: iconHeight,
                     right: 20,
@@ -148,14 +148,14 @@ function Controller() {
                     };
                 });
                 var noVender = Titanium.UI.createImageView({
-                    image: "_vender.png",
+                    image: _venderImg,
                     width: 64,
                     height: iconHeight,
                     right: 20,
                     top: iconTop
                 });
                 var despachar = Titanium.UI.createImageView({
-                    image: "despachar.png",
+                    image: despacharImg,
                     width: 64,
                     height: iconHeight,
                     right: 104,
@@ -207,7 +207,7 @@ function Controller() {
                     height: 80
                 });
                 var vender = Titanium.UI.createImageView({
-                    image: "vender.png",
+                    image: venderImg,
                     width: 64,
                     height: iconHeight,
                     right: 20,
@@ -233,14 +233,14 @@ function Controller() {
                     };
                 });
                 var noVender = Titanium.UI.createImageView({
-                    image: "_vender.png",
+                    image: _venderImg,
                     width: 64,
                     height: iconHeight,
                     right: 20,
                     top: iconTop
                 });
                 var despachar = Titanium.UI.createImageView({
-                    image: "despachar.png",
+                    image: despacharImg,
                     width: 64,
                     height: iconHeight,
                     right: 104,
@@ -291,7 +291,7 @@ function Controller() {
                     height: 80
                 });
                 var vender = Titanium.UI.createImageView({
-                    image: "vender.png",
+                    image: venderImg,
                     width: 64,
                     height: iconHeight,
                     right: 20,
@@ -317,14 +317,14 @@ function Controller() {
                     };
                 });
                 var noVender = Titanium.UI.createImageView({
-                    image: "_vender.png",
+                    image: _venderImg,
                     width: 64,
                     height: iconHeight,
                     right: 20,
                     top: iconTop
                 });
                 var despachar = Titanium.UI.createImageView({
-                    image: "despachar.png",
+                    image: despacharImg,
                     width: 64,
                     height: iconHeight,
                     right: 104,
@@ -549,6 +549,12 @@ function Controller() {
     getTodoList("kiwi");
     getTodoList("fresa");
     getTodoList("pina");
+    var venderImg;
+    var _venderImg;
+    var despacharImg;
+    venderImg = "/images/vender.png";
+    _venderImg = "/images/_vender.png";
+    despacharImg = "/images/despachar.png";
     var iconHeight = 40;
     var iconTop = 18;
     $.mainTabGroup.open();

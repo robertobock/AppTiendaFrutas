@@ -6,6 +6,19 @@ var ip = "192.168.0.101";
 getTodoList("kiwi");
 getTodoList("fresa");
 getTodoList("pina");
+var venderImg;
+var _venderImg;
+var despacharImg;
+if (Ti.Platform.osname == "android") {
+	venderImg = "/images/vender.png";
+	_venderImg = "/images/_vender.png";
+	despacharImg = "/images/despachar.png";
+}
+else{
+	venderImg = "vender.png";
+	_venderImg = "_vender.png";
+	despacharImg = "despachar.png";
+}
 
 var json1;
 var json2;
@@ -31,7 +44,7 @@ function mandarProducir(e){
         },
         timeout : 1000,
     });
-    sendProducir.open('POST', 'http://'+ip+':3050/api/distribuidora/'+e.source.usuario+'/mandarproducir');
+    sendProducir.open('post', 'http://'+ip+':3050/api/distribuidora/'+e.source.usuario+'/mandarproducir');
     var parameterProducir={"type":e.source.fruta,"quantity":quantity};
     sendProducir.send(parameterProducir);
     sendProducir.onload = function(e){
@@ -157,7 +170,7 @@ function getTodoList(fruta) {
 	                height:80
 	            });	
 	            var vender =  Titanium.UI.createImageView({
-					image:"vender.png",
+					image:venderImg,
 					width:64,
 					height:iconHeight,
 					right:20,
@@ -184,7 +197,7 @@ function getTodoList(fruta) {
 				});
 				
 				var noVender =  Titanium.UI.createImageView({
-					image:"_vender.png",
+					image:_venderImg,
 					width:64,
 					height:iconHeight,
 					right:20,
@@ -192,7 +205,7 @@ function getTodoList(fruta) {
 				});
 				
 				var despachar =  Titanium.UI.createImageView({
-					image:"despachar.png",
+					image:despacharImg,
 					width:64,
 					height:iconHeight,
 					right:104,
@@ -248,7 +261,7 @@ function getTodoList(fruta) {
 	                height : 80
 	            });	
 	            var vender =  Titanium.UI.createImageView({
-					image:"vender.png",
+					image:venderImg,
 					width:64,
 					height:iconHeight,
 					right:20,
@@ -275,7 +288,7 @@ function getTodoList(fruta) {
 				});
 				
 				var noVender =  Titanium.UI.createImageView({
-					image:"_vender.png",
+					image:_venderImg,
 					width:64,
 					height:iconHeight,
 					right:20,
@@ -283,7 +296,7 @@ function getTodoList(fruta) {
 				});
 				
 				var despachar =  Titanium.UI.createImageView({
-					image:"despachar.png",
+					image:despacharImg,
 					width:64,
 					height:iconHeight,
 					right:104,
@@ -337,7 +350,7 @@ function getTodoList(fruta) {
 	            });	
 	            
 	            var vender =  Titanium.UI.createImageView({
-					image:"vender.png",
+					image:venderImg,
 					width:64,
 					height:iconHeight,
 					right:20,
@@ -364,7 +377,7 @@ function getTodoList(fruta) {
 				});
 				
 				var noVender =  Titanium.UI.createImageView({
-					image:"_vender.png",
+					image:_venderImg,
 					width:64,
 					height:iconHeight,
 					right:20,
@@ -372,7 +385,7 @@ function getTodoList(fruta) {
 				});
 				
 				var despachar =  Titanium.UI.createImageView({
-					image:"despachar.png",
+					image:despacharImg,
 					width:64,
 					height:iconHeight,
 					right:104,
