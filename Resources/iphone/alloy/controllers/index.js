@@ -41,7 +41,7 @@ function Controller() {
             },
             timeout: 1e3
         });
-        senduno.open("post", "http://" + ip + ":3050/api/distribuidora/comprarfruta");
+        senduno.open("PUT", "http://" + ip + ":3050/api/distribuidora/comprarfruta");
         var parameterCompra = {
             fruta: e.source.parametro
         };
@@ -56,7 +56,7 @@ function Controller() {
                     },
                     timeout: 1e3
                 });
-                senddos.open("post", "http://" + ip + ":3000/api/kiwitienda/guardarfuta");
+                senddos.open("PUT", "http://" + ip + ":3000/api/kiwitienda/guardarfuta");
                 console.log(json.fruta);
                 var parameterComprado = {
                     _id: json.fruta._id,
@@ -186,7 +186,7 @@ function Controller() {
                     var params = {
                         _id: e.source.miID
                     };
-                    sendDelete.open("DELETE", "http://" + ip + ":3000/api/kiwitienda/despacharfruta");
+                    sendDelete.open("PUT", "http://" + ip + ":3000/api/kiwitienda/despacharfruta");
                     sendDelete.send(params);
                     sendDelete.onload = function() {
                         getTodoList(fruta);
@@ -271,7 +271,7 @@ function Controller() {
                     var params = {
                         _id: e.source.miID
                     };
-                    sendDelete.open("DELETE", "http://" + ip + ":3000/api/kiwitienda/despacharfruta");
+                    sendDelete.open("PUT", "http://" + ip + ":3000/api/kiwitienda/despacharfruta");
                     sendDelete.send(params);
                     sendDelete.onload = function() {
                         getTodoList(fruta);
@@ -355,7 +355,7 @@ function Controller() {
                     var params = {
                         _id: e.source.miID
                     };
-                    sendDelete.open("DELETE", "http://" + ip + ":3000/api/kiwitienda/despacharfruta");
+                    sendDelete.open("PUT", "http://" + ip + ":3000/api/kiwitienda/despacharfruta");
                     sendDelete.send(params);
                     sendDelete.onload = function() {
                         getTodoList(fruta);
@@ -452,7 +452,6 @@ function Controller() {
         layout: "vertical",
         title: "Pedir",
         id: "pedirFresa",
-        right: "1px",
         parametro: "pina"
     });
     $.__views.winTwo.add($.__views.pedirFresa);

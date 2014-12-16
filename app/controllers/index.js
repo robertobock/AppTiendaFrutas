@@ -56,7 +56,7 @@ function pedirUno(e){
     });
     
     //Here you have to change it for your local ip
-    senduno.open('post', 'http://'+ip+':3050/api/distribuidora/comprarfruta');
+    senduno.open('POST', 'http://'+ip+':3050/api/distribuidora/comprarfruta');
     var parameterCompra={"fruta":e.source.parametro};
 	senduno.send(parameterCompra);
 	senduno.onload = function(err) {
@@ -74,7 +74,7 @@ function pedirUno(e){
 		        timeout : 1000,
 		    });
 		    
-		    senddos.open('post', 'http://'+ip+':3000/api/kiwitienda/guardarfuta');
+		    senddos.open('POST', 'http://'+ip+':3000/api/kiwitienda/guardarfuta');
 		    console.log(json.fruta);
 		    var parameterComprado={"_id":json.fruta._id,"fruta":json.fruta.type};
 		    senddos.send(parameterComprado);

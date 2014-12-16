@@ -18,7 +18,7 @@
             <Window id="winTwo" backgroundColor="white"> 
                  <TableView id="tableViewPina" height="80%" />
 
-	                 <Button id="pedirFresa" right="1px"  onClick="pedirUno" parametro="pina">Pedir</Button>
+	                 <Button id="pedirFresa"  onClick="pedirUno" parametro="pina">Pedir</Button>
 
                  <View id="view21" backgroundColor="white" >
 	                 <TextField id="pinaTextField" width="150px" left="20" hintText="Mandar a Producir" backgroundColor="white" ></TextField>
