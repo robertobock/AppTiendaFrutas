@@ -1,7 +1,7 @@
 //Array to store the data from the todo list
 
 //We execute the function to show the data for the first view
-var ip = "192.168.0.101";
+var ip = "192.168.0.102";
 
 getTodoList("kiwi");
 getTodoList("fresa");
@@ -13,6 +13,9 @@ if (Ti.Platform.osname == "android") {
 	venderImg = "/images/vender.png";
 	_venderImg = "/images/_vender.png";
 	despacharImg = "/images/despachar.png";
+	$.fresaTextField.width=200;
+	$.pinaTextField.width=200;
+	$.kiwiTextField.width=200;
 }
 else{
 	venderImg = "vender.png";

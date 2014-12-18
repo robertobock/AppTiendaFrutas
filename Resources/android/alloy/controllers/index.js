@@ -545,7 +545,7 @@ function Controller() {
     $.__views.mainTabGroup && $.addTopLevelView($.__views.mainTabGroup);
     exports.destroy = function() {};
     _.extend($, $.__views);
-    var ip = "192.168.0.101";
+    var ip = "192.168.0.102";
     getTodoList("kiwi");
     getTodoList("fresa");
     getTodoList("pina");
@@ -555,6 +555,9 @@ function Controller() {
     venderImg = "/images/vender.png";
     _venderImg = "/images/_vender.png";
     despacharImg = "/images/despachar.png";
+    $.fresaTextField.width = 200;
+    $.pinaTextField.width = 200;
+    $.kiwiTextField.width = 200;
     var iconHeight = 40;
     var iconTop = 18;
     $.mainTabGroup.open();
