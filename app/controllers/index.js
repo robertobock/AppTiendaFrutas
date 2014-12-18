@@ -47,7 +47,7 @@ function mandarProducir(e){
         },
         timeout : 1000,
     });
-    sendProducir.open('post', 'http://'+ip+':3050/api/distribuidora/'+e.source.usuario+'/mandarproducir');
+    sendProducir.open('POST', 'http://'+ip+':3050/api/distribuidora/'+e.source.usuario+'/mandarproducir');
     var parameterProducir={"type":e.source.fruta,"quantity":quantity};
     sendProducir.send(parameterProducir);
     sendProducir.onload = function(e){
